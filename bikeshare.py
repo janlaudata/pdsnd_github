@@ -1,6 +1,5 @@
 import time
 import pandas as pd
-import numpy as np
 
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
@@ -160,7 +159,7 @@ def user_stats(df, city):
     # Anzahl der Benutzertypen zählen
     user_counts = df['User Type'].value_counts()
 
-    print("Benutzertypen:")
+    print("User Statistics:")
     print(user_counts)
 
     if city != 'washington' and 'Gender' in df.columns and 'Birth Year' in df.columns:
